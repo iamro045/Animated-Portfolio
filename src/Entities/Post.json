@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Getting Started with React and Vite",
+    "slug": "getting-started-with-react-and-vite",
+    "image_url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "content": "Full Markdown content goes here...",
+    "excerpt": "A beginner-friendly guide to setting up a modern React development environment using Vite.",
+    "published_date": "2025-09-10"
+  },
+  {
+    "id": 2,
+    "title": "Understanding Tailwind CSS for Modern UI",
+    "slug": "understanding-tailwind-css",
+    "image_url": "https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "content": "Full Markdown content goes here...",
+    "excerpt": "Discover how utility-first CSS with Tailwind can speed up your web development workflow.",
+    "published_date": "2025-09-05"
+  },
+  {
+    "id": 3,
+    "title": "The Power of Data Science in Business",
+    "slug": "power-of-data-science",
+    "image_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "content": "Full Markdown content goes here...",
+    "excerpt": "An overview of how data science is transforming industries and driving business decisions.",
+    "published_date": "2025-08-28"
+  }
+]
