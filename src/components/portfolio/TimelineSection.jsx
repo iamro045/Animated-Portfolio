@@ -8,7 +8,7 @@ export default function TimelineSection() {
       degree: "Bachelor of Engineering in Computer Engineering",
       institution: "Savitribai Phule Pune University",
       period: "2022 - 2026",
-      description: "Currently pursuing my undergraduate degree with focus on Software Engineering, Data Structures, and Machine Learning. Maintaining a CGPA of 8.5/10.",
+      description: "Currently pursuing my undergraduate degree with focus on Software Engineering, Data Structures, and Machine Learning. Maintaining a CGPA of 7.5/10.",
       status: "current"
     },
     {
@@ -22,7 +22,7 @@ export default function TimelineSection() {
       degree: "Secondary School Certificate (SSC)",
       institution: "Janta Vidyalaya Vaygaon, Dundhe",
       period: "2009 - 2019",
-      description: "Completed with 95% marks. Active participant in science competitions.",
+      description: "Completed with 87% marks. Active participant in science competitions.",
       status: "completed"
     }
   ];

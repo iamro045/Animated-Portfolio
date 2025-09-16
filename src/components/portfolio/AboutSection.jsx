@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Code2, Database, Brain, Sparkles } from "lucide-react";
+import RohitImg from "@/assets/Rohit.jpg";
 
 export default function AboutSection() {
   const highlights = [
@@ -38,7 +39,7 @@ export default function AboutSection() {
             <div className="relative w-full max-w-sm mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl rotate-3 transform-gpu transition-transform group-hover:rotate-6"></div>
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                src={RohitImg} 
                 alt="Rohit Shinde"
                 className="relative w-full h-auto object-cover rounded-2xl shadow-xl"
               />

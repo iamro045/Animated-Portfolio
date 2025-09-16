@@ -78,7 +78,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Skills', id: 'skills' },
     { name: 'Education', id: 'education' },
     { name: 'Projects', id: 'projects' },
-    { name: 'Blog', page: 'Blog' },
+    { name: 'Blog', id: 'Blog' },
     { name: 'Contact', id: 'contact' },
   ];
 
@@ -104,7 +104,7 @@ export default function Layout({ children, currentPageName }) {
               onClick={() => scrollToSection('home')}
               className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent transition-transform duration-200 hover:scale-105"
             >
-              Rohit Shinde
+              Groott
             </button>
             
             <div className="hidden lg:flex items-center space-x-6">

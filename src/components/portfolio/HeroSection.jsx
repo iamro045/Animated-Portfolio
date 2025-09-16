@@ -103,7 +103,7 @@ export default function HeroSection() {
               View My Work
             </motion.button>
             <motion.a
-              href="/resume.pdf"
+              href="my-portfolio\src\assets\Rohit_Resume.pdf"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
