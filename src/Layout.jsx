@@ -102,7 +102,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex justify-between items-center h-20">
             <button
               onClick={() => scrollToSection('home')}
-              className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent transition-transform duration-200 hover:scale-105"
+              className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent transition-transform duration-200 hover:scale-105"
             >
               Groott
             </button>
