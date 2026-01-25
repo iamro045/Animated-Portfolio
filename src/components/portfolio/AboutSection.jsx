@@ -4,6 +4,7 @@ import { Code2, Database, Brain, Sparkles } from "lucide-react";
 import RohitImg from "@/assets/Rohit.jpg";
 
 export default function AboutSection() {
+  
   const highlights = [
     { icon: Code2, title: "Full-Stack Development", color: "text-blue-600 bg-blue-50" },
     { icon: Database, title: "Data Science", color: "text-indigo-600 bg-indigo-50" },
