@@ -14,8 +14,7 @@ export default function Layout({ children }) {
   const navigate = useNavigate();
 
   const isHomePage =
-    location.pathname === createPageUrl("Home") ||
-    location.pathname === "/";
+    location.pathname === createPageUrl("Home") || location.pathname === "/";
 
   /* =========================
      THEME MANAGEMENT
@@ -86,9 +85,7 @@ export default function Layout({ children }) {
 
     const yOffset = -80;
     const y =
-      section.getBoundingClientRect().top +
-      window.pageYOffset +
-      yOffset;
+      section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y, behavior: "smooth" });
     setIsMobileMenuOpen(false);
@@ -108,7 +105,7 @@ export default function Layout({ children }) {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           isScrolled || isMobileMenuOpen
@@ -203,35 +200,40 @@ export default function Layout({ children }) {
         </AnimatePresence>
       </nav>
 
-      <main className="pt-20">{children}</main>
+      <main className="">{children}</main>
 
-      {/* FOOTER */}
-      <footer className="bg-gray-100 dark:bg-gray-800 py-12">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex justify-center gap-6 mb-6">
+      <footer className="bg-gray-100 dark:bg-gray-800 py-6">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <div className="flex justify-center gap-6 mb-4">
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/iamro045"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center hover:scale-110 transition"
+              className="w-11 h-11 bg-white dark:bg-gray-700 rounded-full
+                   flex items-center justify-center
+                   hover:scale-110 transition"
             >
-              <Github />
+              <Github className="w-5 h-5" />
             </a>
+
             <a
-              href="https://linkedin.com/in/your-username"
+              href="https://linkedin.com/in/rohitshinde045"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center hover:scale-110 transition"
+              className="w-11 h-11 bg-white dark:bg-gray-700 rounded-full
+                   flex items-center justify-center
+                   hover:scale-110 transition"
             >
-              <Linkedin />
+              <Linkedin className="w-5 h-5" />
             </a>
           </div>
-          <p className="text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} Rohit Shinde
+
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            © {new Date().getFullYear()} Rohit Shinde. Built with React &
+            passion 🚀
           </p>
         </div>
       </footer>
     </div>
   );
 }
-  
