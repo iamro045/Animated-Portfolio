@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronDown, Code, Brain, Download } from "lucide-react";
 import { motion } from "framer-motion";
+import RohitRes from "@/assets/Rohit_Resume.pdf";
 
 /* =========================
    TYPEWRITER
@@ -167,8 +168,7 @@ export default function HeroSection() {
             </motion.button>
 
             <motion.a
-              href="/Rohit_Resume.pdf"
-              download
+              href="@/assets/Rohit_Resume.pdf"              download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700
