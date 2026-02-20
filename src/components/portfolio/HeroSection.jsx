@@ -42,8 +42,10 @@ export default function HeroSection() {
     const glow = glowRef.current;
     if (!glow) return;
 
-    let x = 0, y = 0;
-    let targetX = 0, targetY = 0;
+    let x = 0,
+      y = 0;
+    let targetX = 0,
+      targetY = 0;
 
     const animate = () => {
       x += (targetX - x) * 0.08;
@@ -70,23 +72,17 @@ export default function HeroSection() {
     if (!el) return;
 
     const yOffset = -80;
-    const y =
-      el.getBoundingClientRect().top +
-      window.pageYOffset +
-      yOffset;
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y, behavior: "smooth" });
   };
 
   return (
     <section
-    id="home"
-    className="scroll-mt-24 relative min-h-screen flex items-center justify-center
+      id="home"
+      className="scroll-mt-24 relative min-h-screen flex items-center justify-center
                overflow-hidden bg-white dark:bg-gray-900"
-  >
-      
-
-    
+    >
       {/* CURSOR GLOW */}
       <div
         ref={glowRef}
@@ -97,9 +93,11 @@ export default function HeroSection() {
       />
 
       {/* SUBTLE BASE GRADIENT */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br
+      <div
+        className="absolute inset-0 -z-10 bg-gradient-to-br
                       from-blue-50 via-white to-indigo-50
-                      dark:from-gray-900 dark:via-gray-900 dark:to-gray-800" />
+                      dark:from-gray-900 dark:via-gray-900 dark:to-gray-800"
+      />
 
       {/* CONTENT */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
@@ -121,16 +119,30 @@ export default function HeroSection() {
             transition={{ delay: 2, duration: 0.5 }}
             className="flex flex-wrap justify-center gap-4 mb-8"
           >
-            <div className="flex items-center gap-2 bg-white/80 dark:bg-gray-800/80
-                            backdrop-blur px-4 py-2 rounded-full shadow border">
+            <div
+              className="flex items-center gap-2 bg-white/80 dark:bg-gray-800/80
+                            backdrop-blur px-4 py-2 rounded-full shadow border"
+            >
               <Code className="w-5 h-5 text-blue-600" />
               <span className="font-medium text-gray-800 dark:text-gray-200">
-                Computer Engineering Student
+                Full Stack Web Developer
               </span>
             </div>
 
-            <div className="flex items-center gap-2 bg-white/80 dark:bg-gray-800/80
-                            backdrop-blur px-4 py-2 rounded-full shadow border">
+            <div
+              className="flex items-center gap-2 bg-white/80 dark:bg-gray-800/80
+                            backdrop-blur px-4 py-2 rounded-full shadow border"
+            >
+              <Brain className="w-5 h-5 text-indigo-600" />
+              <span className="font-medium text-gray-800 dark:text-gray-200">
+                Python Developer
+              </span>
+            </div>
+
+            <div
+              className="flex items-center gap-2 bg-white/80 dark:bg-gray-800/80
+                            backdrop-blur px-4 py-2 rounded-full shadow border"
+            >
               <Brain className="w-5 h-5 text-indigo-600" />
               <span className="font-medium text-gray-800 dark:text-gray-200">
                 Aspiring Data Scientist
@@ -168,7 +180,8 @@ export default function HeroSection() {
             </motion.button>
 
             <motion.a
-              href="@/assets/Rohit_Resume.pdf"              download
+              href="@/assets/Rohit_Resume.pdf"
+              download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700
@@ -188,7 +201,10 @@ export default function HeroSection() {
           transition={{ delay: 3, duration: 0.5 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
         >
-          <button onClick={() => scrollWithOffset("about")} className="animate-bounce">
+          <button
+            onClick={() => scrollWithOffset("about")}
+            className="animate-bounce"
+          >
             <ChevronDown className="w-6 h-6 text-blue-600" />
           </button>
         </motion.div>
