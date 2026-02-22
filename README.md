@@ -22,8 +22,7 @@ A clean, animated web portfolio to showcase projects, skills, and contact info.
 
 ## Tech Stack
 
-- HTML5 & CSS3  
-- JavaScript  
+MERN 
 
 ---
 
